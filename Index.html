@@ -1,0 +1,49 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Memory Flip</title>
+<link rel="stylesheet" href="memory-flip.css">
+</head>
+<body>
+<div class="panel">
+<header>
+<h1>🧠 Memory Flip</h1>
+<div class="meta">
+<span>Час: <span id="time">0.0</span> с</span>
+<span>Ходи: <span id="moves">0</span></span>
+<span>Знайдено: <span id="found">0 / 0</span></span>
+</div>
+</header>
+
+
+<div class="controls">
+<select id="size">
+<option value="4">4×4</option>
+<option value="8">8×8</option>
+<option value="16">16×16</option>
+<option value="32">32×32</option>
+</select>
+<label>
+<input type="checkbox" id="useEmoji"> Емодзі
+</label>
+<button id="startBtn">Старт</button>
+<button id="shuffleBtn">Перемішати</button>
+</div>
+
+
+<div class="status">
+<div class="best">Рекорд: <span id="bestRecord">—</span></div>
+<div class="best">Ходи рекорду: <span id="bestMoves">—</span></div>
+</div>
+
+
+<div class="board-wrap">
+<div id="board" class="board"></div>
+</div>
+</div>
+
+
+<script src="memory-flip.js"></script>
+</body>
+</html>
